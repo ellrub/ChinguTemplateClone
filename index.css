@@ -25,6 +25,7 @@ html,
 body {
     scroll-behavior: smooth;
     height: 100%;
+    width: 100vw;
 }
 
 .parallax-wrapper {
@@ -177,7 +178,7 @@ body {
 
 .left-wrapper-one-img {
     background-image: url("/images/johannes-plenio-bhCdwWNmXw8-unsplash.jpg");
-    height: 25vh;
+    height: 18vh;
     background-size: 100%;
 }
 
@@ -231,7 +232,7 @@ body {
 
 .mid-wrapper-one-img {
     background-image: url("/images/lucas-calloch-P-yzuyWFEIk-unsplash.jpg");
-    height: 25vh;
+    height: 18vh;
 }
 
 .rd {
@@ -246,7 +247,7 @@ body {
 
 .right-wrapper-one-img {
     background-image: url("/images/pauline-heidmets-GTL39WM6QqA-unsplash.jpg");
-    height: 25vh;
+    height: 18vh;
 }
 
 .para {
@@ -393,8 +394,9 @@ body {
 
 .wrapper-four {
     text-align: center;
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
+    padding: 15px 15px 45px 15px;
 }
 
 .wrapper-four p {
@@ -414,7 +416,7 @@ body {
 .contact-form {
     
     background-image: url("/images/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg");
-    background-color: #314e7a;
+    background-color: #7d838d;
     background-blend-mode: multiply;
     height: 100vh;
     background-attachment: fixed;
@@ -452,7 +454,7 @@ body {
 
 input,
 textarea {
-    background: rgba(24, 22, 22, 0.384);
+    background: rgba(24, 22, 22, 0.74);
     border-radius: 6px;
     box-shadow: 3px 3px 2px rgb(0, 0, 0);
     backdrop-filter: blur(5px);
@@ -516,6 +518,14 @@ textarea {
 .big-nav-li a:active {
     border-bottom: 2px solid var(--secondary-nav-color);
     cursor: pointer;
+}
+
+footer {
+    background-color: var(--nav-color);
+    color: var(--secondary-nav-color);
+    text-align: center;
+    height: 8vh;
+    padding: 10px;
 }
 
 
@@ -594,5 +604,14 @@ textarea {
     
     .input-button {
         width: 100%;
+    }
+
+    .big-nav-li a,
+    .section-bg-h2 {
+        font-size: 1.5em;
+    }
+
+    #contact-h2 {
+        font-size: 2.5em;
     }
 } 
