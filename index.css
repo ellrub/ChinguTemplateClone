@@ -461,7 +461,7 @@ textarea {
     -webkit-backdrop-filter: blur(5px);
     border: none;
     color: whitesmoke;
-    width: 100%;
+    width: 100vw;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
 }
@@ -498,7 +498,8 @@ textarea {
 
 .wrapper-one,
 .wrapper-two,
-.wrapper-three {
+.wrapper-three,
+.wrapper-four {
     max-width: 1200px;
 }
 
