@@ -12,6 +12,7 @@
     --col-three-color: rgb(106, 148, 228);
     --col-four-color: rgb(240, 235, 164);
     --wrapper-four: rgb(185, 43, 185);
+    --button-text-color: black;
 }
 
 * {
@@ -25,7 +26,7 @@ html,
 body {
     scroll-behavior: smooth;
     height: 100%;
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -141,7 +142,7 @@ body {
 }
 
 .header {
-    background-image: url("images/jeremy-brady-vK26p2SFX3E-unsplash.jpg");
+    background-image: url("images/jeremy-brady-vK26p2SFX3E-unsplash\ \(1\).jpg");
     background-color: #295a6d;
     background-blend-mode: screen;
     background-attachment: fixed;
@@ -178,7 +179,7 @@ body {
 }
 
 .left-wrapper-one-img {
-    background-image: url("/images/johannes-plenio-bhCdwWNmXw8-unsplash.jpg");
+    background-image: url("images/johannes-plenio-bhCdwWNmXw8-unsplash\ \(1\).jpg");
     height: 18vh;
     background-size: 100%;
 }
@@ -208,17 +209,24 @@ body {
     letter-spacing: 0.08em;
 }
 
-.wrapper-one button,
-.wrapper-two button,
-.wrapper-three button,
-.wrapper-four button,
-.contact-form button {
+.btn {
     font-size: 1.2em;
     font-weight: bold;
     padding: 0.3em 1em;
     border: none;
     border-radius: 5px;
+    transition: box-shadow 0.2s;
+    color: var(--button-text-color);
+}
+
+.btn::after {
     box-shadow: 3px 3px 2px rgb(0, 0, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover::after {
+    opacity: 1;
 }
 
 .flex {
@@ -228,7 +236,7 @@ body {
 
 .flex-btn {
     background-color: var(--flex-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
+    
 }
 
 .mid-wrapper-one-img {
@@ -247,7 +255,7 @@ body {
 }
 
 .right-wrapper-one-img {
-    background-image: url("/images/pauline-heidmets-GTL39WM6QqA-unsplash.jpg");
+    background-image: url("images/pauline-heidmets-GTL39WM6QqA-unsplash\ \(1\).jpg");
     height: 18vh;
 }
 
@@ -262,12 +270,12 @@ body {
 }
 
 .column-left-img {
-    background-image: url("/images/erol-ahmed-_MYcIi9DgYQ-unsplash.jpg");
+    background-image: url("images/duy-pham-6iYs78oCiZA-unsplash.jpg");
     height: 25vh;
 }
 
 .column-right-img {
-    background-image: url("/images/pauline-heidmets-GTL39WM6QqA-unsplash.jpg");
+    background-image: url("images/vincentiu-solomon-ln5drpv_ImI-unsplash\ \(1\).jpg");
     height: 25vh;
 }
 
@@ -292,7 +300,7 @@ body {
 }
 
 .section-bg {
-    background-image: url("/images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg");
+    background-image: url("images/lukasz-szmigiel-jFCViYFYcus-unsplash\ \(2\).jpg");
     background-color: #585656;
     background-blend-mode: screen;
     background-attachment: fixed;
@@ -313,22 +321,22 @@ body {
 }
 
 .wrapper-three-left-top-img {
-    background-image: url("/images/atle-mo-X9QnU-h3X_8-unsplash.jpg");
+    background-image: url("images/atle-mo-X9QnU-h3X_8-unsplash\ \(1\).jpg");
     height: 15vh;
 }
 
 .wrapper-three-right-top-img {
-    background-image: url("/images/benjamin-voros-phIFdC6lA4E-unsplash.jpg");
+    background-image: url("images/benjamin-voros-phIFdC6lA4E-unsplash\ \(1\).jpg");
     height: 15vh;
 }
 
 .wrapper-three-left-bot-img {
-    background-image: url("/images/bob-canning-r53rNKb_7s8-unsplash.jpg");
+    background-image: url("/images/bob-canning-r53rNKb_7s8-unsplash\ \(1\).jpg");
     height: 15vh;
 }
 
 .wrapper-three-right-bot-img {
-    background-image: url("/images/timothy-eberly-LHm2nLdtC9g-unsplash.jpg");
+    background-image: url("/images/timothy-eberly-LHm2nLdtC9g-unsplash\ \(1\).jpg");
     height: 15vh;
 }
 
@@ -389,7 +397,7 @@ body {
 }
 
 .wrapper-four-img {
-    background-image: url("/images/jeremy-thomas-E0AHdsENmDg-unsplash.jpg");
+    background-image: url("/images/jeremy-thomas-E0AHdsENmDg-unsplash\ \(1\).jpg");
     height: 28vh;
 }
 
@@ -416,7 +424,7 @@ body {
 
 .contact-form {
     
-    background-image: url("/images/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg");
+    background-image: url("/images/pawel-czerwinski--0xCCPIbl3M-unsplash\ \(1\).jpg");
     background-color: #7d838d;
     background-blend-mode: multiply;
     height: 100vh;
