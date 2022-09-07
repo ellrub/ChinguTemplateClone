@@ -25,7 +25,8 @@ html,
 body {
     scroll-behavior: smooth;
     height: 100%;
-    width: 100%;
+    width: 99%;
+    margin: 0 auto;
 }
 
 .parallax-wrapper {
@@ -565,7 +566,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 800px) {
     .wrapper-one,
     .wrapper-two,
     .wrapper-three {
