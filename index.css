@@ -215,7 +215,7 @@ body {
     padding: 0.3em 1em;
     border: none;
     border-radius: 5px;
-    transition: box-shadow 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     color: var(--button-text-color);
 }
 
@@ -236,7 +236,6 @@ body {
 
 .flex-btn {
     background-color: var(--flex-color);
-    
 }
 
 .mid-wrapper-one-img {
@@ -250,8 +249,7 @@ body {
 }
 
 .rd-btn {
-    background-color: var(--rd-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
+    background-color: var(--rd-color); 
 }
 
 .right-wrapper-one-img {
@@ -266,7 +264,6 @@ body {
 
 .para-btn {
     background-color: var(--para-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .column-left-img {
@@ -286,7 +283,6 @@ body {
 
 .left-btn {
     background-color: var(--left-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .right {
@@ -296,7 +292,6 @@ body {
 
 .right-btn {
     background-color: var(--right-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .section-bg {
@@ -368,27 +363,22 @@ body {
 
 .wrapper-three p {
     color: var(--secondary-nav-color);
-    
 }
 
 .col-one-btn {
     background-color: var(--col-one-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .col-two-btn {
     background-color: var(--col-two-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .col-three-btn {
     background-color: var(--col-three-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .col-four-btn {
     background-color: var(--col-four-color);
-    box-shadow: 3px 3px 2px rgb(0, 0, 0);
 }
 
 .col-one,
