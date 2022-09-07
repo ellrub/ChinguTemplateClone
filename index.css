@@ -36,6 +36,9 @@ body {
 
 /* ==== Navbar ====*/
 
+.top-nav,
+
+
 .top-nav {
     position: fixed;
     top: 0;
@@ -81,7 +84,7 @@ body {
     z-index: 101;
     background: var(--nav-color);
     width: 300px;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
     color: var(--secondary-nav-color);
     transform: translateX(-100%);
@@ -116,19 +119,6 @@ body {
     border-bottom: 2px solid var(--secondary-nav-color);
 }
 
-.overlay {
-    position: fixed;
-    display: none;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--nav-color);
-    width: 100%;
-    height: 100vh;
-}
-
 .show-overlay {
     display: block;
 }
@@ -141,17 +131,19 @@ body {
     background-position: center;
 }
 
-.header {
-    background-image: url("images/jeremy-brady-vK26p2SFX3E-unsplash\ \(1\).jpg");
-    background-color: #295a6d;
-    background-blend-mode: screen;
+.big-img {
     background-attachment: fixed;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
 
+.header {
+    background-image: url("images/jeremy-brady-vK26p2SFX3E-unsplash\ \(1\).jpg");
+    background-color: #295a6d;
+    background-blend-mode: screen;
+    
     margin-top: 47px;
     margin-bottom: 20px;
     height: 50vh;
@@ -216,37 +208,31 @@ body {
     border: none;
     border-radius: 5px;
     color: var(--button-text-color);
-}
-
-.btn-b {
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     transition: box-shadow 0.2s ease-in-out, filter 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.btn-b:hover,
-.btn-b:active,
-.btn-b:focus {
+.btn:hover,
+.btn:active,
+.btn:focus {
     transform: translateY(-0.25rem);
     box-shadow: 0px 3px 2px rgb(0, 0, 0);
     filter: brightness(120%);
-}
-
-.btn-w {
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.15);
-    transition: box-shadow 0.2s ease-in-out, filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .btn-w:hover,
 .btn-w:active,
 .btn-w:focus {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 2px rgb(0, 0, 0);
     filter: brightness(80%);
+}
+
+.h2-shadow {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .flex {
     color: var(--flex-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .flex-btn {                         
@@ -260,7 +246,6 @@ body {
 
 .rd {
     color: var(--rd-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .rd-btn {
@@ -274,7 +259,6 @@ body {
 
 .para {
     color: var(--para-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .para-btn {
@@ -293,7 +277,6 @@ body {
 
 .left {
     color: var(--left-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .left-btn {
@@ -302,7 +285,6 @@ body {
 
 .right {
     color: var(--right-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .right-btn {
@@ -313,12 +295,6 @@ body {
     background-image: url("images/lukasz-szmigiel-jFCViYFYcus-unsplash\ \(2\).jpg");
     background-color: #585656;
     background-blend-mode: screen;
-    background-attachment: fixed;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 
     margin-bottom: 20px;
     height: 50vh;
@@ -330,24 +306,24 @@ body {
     font-weight: bold;
 }
 
+.wrapper-three-img {
+    height: 15vh;
+}
+
 .wrapper-three-left-top-img {
     background-image: url("images/atle-mo-X9QnU-h3X_8-unsplash\ \(1\).jpg");
-    height: 15vh;
 }
 
 .wrapper-three-right-top-img {
     background-image: url("images/benjamin-voros-phIFdC6lA4E-unsplash\ \(1\).jpg");
-    height: 15vh;
 }
 
 .wrapper-three-left-bot-img {
     background-image: url("/images/bob-canning-r53rNKb_7s8-unsplash\ \(1\).jpg");
-    height: 15vh;
 }
 
 .wrapper-three-right-bot-img {
     background-image: url("/images/timothy-eberly-LHm2nLdtC9g-unsplash\ \(1\).jpg");
-    height: 15vh;
 }
 
 .wrapper-three-div {
@@ -358,22 +334,18 @@ body {
 
 .col-one-h2 {
     color: var(--col-one-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .col-two-h2 {
     color: var(--col-two-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .col-three-h2 {
     color: var(--col-three-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .col-four-h2 {
     color: var(--col-four-color);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .wrapper-three p {
@@ -420,7 +392,6 @@ body {
 
 .wrapper-four h2 {
     color: var(--wrapper-four);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .wrapper-four button {
@@ -433,12 +404,7 @@ body {
     background-color: #7d838d;
     background-blend-mode: multiply;
     height: 100vh;
-    background-attachment: fixed;
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     padding-top: 30px;;
     margin: 0;
 }
