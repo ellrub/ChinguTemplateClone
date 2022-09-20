@@ -148,7 +148,7 @@ body {
 }
 
 .header h1 {
-    font-size: 3em;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -170,7 +170,7 @@ body {
 .left-wrapper-one-img {
     background-image: url("images/johannes-plenio-bhCdwWNmXw8-unsplash\ \(1\).jpg");
     height: 18vh;
-    background-size: 100%;
+    
 }
 
 .wrapper-one-div,
